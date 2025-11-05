@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--sec-text);
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    font-family: "Pacifico", cursive;
+    color: var(--main-text);
+    span {
+      color: var(--main-color);
+    }
+  }
+}
+:root:has(#lite:checked) {
+  --websiteBackground: #fcfcfc;
+  --cards-background: #ffffff;
+  --main-text: #17161f;
+  --sec-text: rgb(127, 127, 144);
+  --main-color: #ff759c;
+  --main-text-hover: #e35b8b;
+  --shadow-text: #898989;
+  --border-color: #dcdcdc;
+  --background2: #eeeeee;
+  header {
+    label:nth-of-type(1) {
+      display: none;
+    }
+  }
+}
+:root:has(#dark:checked) {
+  header {
+    label:nth-of-type(2) {
+      display: none;
+    }
+  }
+  --websiteBackground: #121212;
+  --cards-background: #1e1e1e;
+  --main-text: #ffffff;
+  --sec-text: #cfcfcf;
+  --main-color: #b97aff;
+  --main-text-hover: #d5a6ff;
+  --shadow-text: #7e7e7e;
+  --border-color: #444444;
+  --background2: #252525;
+}
+
+:root {
+  font-size: 16px !important;
+}
+/* LG – الشاشات أقل من 1280px */
+@media (max-width: 1279px) {
+  :root {
+    font-size: 16px !important;
+  }
+  .lg-100 {
+    width: 100% !important;
+  }
+  .lg-80 {
+    width: 80% !important;
+  }
+  .lg-70 {
+    width: 70% !important;
+  }
+  .lg-60 {
+    width: 60% !important;
+  }
+  .lg-50 {
+    width: 50% !important;
+  }
+  .lg-40 {
+    width: 40% !important;
+  }
+  .lg-33 {
+    width: 33.3333% !important;
+  }
+  .lg-25 {
+    width: 25% !important;
+  }
+  .lg-20 {
+    width: 20% !important;
+  }
+  .lg-16 {
+    width: 16.6666% !important;
+  }
+}
+
+/* MD – أقل من 1024px */
+@media (max-width: 1023px) {
+  :root {
+    font-size: 14px !important;
+  }
+
+  .md-100 {
+    width: 100% !important;
+  }
+  .md-80 {
+    width: 80% !important;
+  }
+  .md-70 {
+    width: 70% !important;
+  }
+  .md-60 {
+    width: 60% !important;
+  }
+  .md-50 {
+    width: 50% !important;
+  }
+  .md-40 {
+    width: 40% !important;
+  }
+  .md-33 {
+    width: 33.3333% !important;
+  }
+  .md-25 {
+    width: 25% !important;
+  }
+  .md-20 {
+    width: 20% !important;
+  }
+  .md-16 {
+    width: 16.6666% !important;
+  }
+}
+
+/* SM – أقل من 768px */
+@media (max-width: 767px) {
+  :root {
+    font-size: 12px !important;
+  }
+  .sm-100 {
+    width: 100% !important;
+  }
+  .sm-80 {
+    width: 80% !important;
+  }
+  .sm-70 {
+    width: 70% !important;
+  }
+  .sm-60 {
+    width: 60% !important;
+  }
+  .sm-50 {
+    width: 50% !important;
+  }
+  .sm-40 {
+    width: 40% !important;
+  }
+  .sm-33 {
+    width: 33.3333% !important;
+  }
+  .sm-25 {
+    width: 25% !important;
+  }
+  .sm-20 {
+    width: 20% !important;
+  }
+  .sm-16 {
+    width: 16.6666% !important;
+  }
+}
+
+/* XS – أقل من 640px */
+@media (max-width: 639px) {
+  :root {
+    font-size: 10px;
+  }
+  .xs-100 {
+    width: 100% !important;
+  }
+  .xs-80 {
+    width: 80% !important;
+  }
+  .xs-70 {
+    width: 70% !important;
+  }
+  .xs-60 {
+    width: 60% !important;
+  }
+  .xs-50 {
+    width: 50% !important;
+  }
+  .xs-40 {
+    width: 40% !important;
+  }
+  .xs-33 {
+    width: 33.3333% !important;
+  }
+  .xs-25 {
+    width: 25% !important;
+  }
+  .xs-20 {
+    width: 20% !important;
+  }
+  .xs-16 {
+    width: 16.6666% !important;
+  }
+}
