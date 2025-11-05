@@ -104,11 +104,13 @@
 /* md */
 @media screen and (max-width: 1023px) {
   #galery{
-    height: 375vh;
+    height: 150vh;
 
     .img-container{
-      height: 300vh;
-       grid-template-areas:
+      height: 120vh;
+      grid-template-columns: 1fr 1fr;
+     
+      grid-template-areas:
       "img-3 img-4"
       "img-3 img-4"
       "img-3 img-4"
@@ -128,8 +130,8 @@
       "img-7 img-6"
       "img-7 img-6"
       "img-7 ."
-      "img-7 .";
-      
+      "img-7 ."; 
+       
     }
   }
   
@@ -139,10 +141,11 @@
 @media screen and (max-width: 767px) {
     #galery{
     padding: 100px 60px;
-    height: 550vh;
+    height: 330vh;
 
     .img-container{
-      height: 500vh;
+      height: 300vh;
+      grid-template-columns: 1fr;
        grid-template-areas:
         "img-1"
         "img-2"
@@ -160,7 +163,7 @@
 /* default / xs */
 @media screen and (max-width: 639px) {
   #galery{
-     padding: 7rem 1.25rem;
+     padding: 4rem 1.25rem;
   }
 }
 
